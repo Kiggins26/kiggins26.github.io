@@ -1,5 +1,9 @@
 <!DOCTYPE HTML>
-
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
 		<title>Andrew Kiggins</title>
@@ -9,86 +13,36 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-		<!-- Wrapper-->
-			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<h1>Andrew Kiggins</h1>
+						<p>Software Engineer &nbsp;&bull;&nbsp; Rock Climber &nbsp;&bull;&nbsp; Avid Shit Talker</p>
+						<nav>
+							<ul>
+								<li><a href="https://twitter.com/andrewkiggins?lang=en" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://linkedin.com/in/akiggins" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://twitter.com/andrewkiggins?lang=en" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="andrewkiggins2000@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<h1>Andrew Kiggins</h1>
-									<p>Software Engineer</p>
-								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
-								</a>
-							</article>
-
-						<!-- Work -->
-							<article id="work" class="panel">
-								<header>
-									<h2>About me and my work</h2>
-								</header>
-								<p>
-                                    I am Andrew Kiggins. I am a back-end developer located in British Columbia, Canada.
-				    I currently work at a cybersecurity start-up called Elpha Secure.
-                                    In the past I have worked at Amazon, Microsoft, and Aviso Wealth.  
-								</p>
-                                <ul class = "roman">
-                                    <li> Amazon </li>
-                                        <ul class = "square">
-                                            <li> Worked on the recruitment experience team pertaining to internal systems for student programs by building distributed storage, index, and query systems that are scalable, fault-tolerant, low cost, and easy to manage/use. </li>
-                                        </ul>
-                                        
-                                    <li> Microsoft </li>
-                                        <ul class = "square">
-                                            <li> Worked on the Chat Services team on Microsoft Teams building out the back-end side of a feature pertaining to synchronization.   </li>
-                                        </ul>
-
-                                    <li> Aviso Wealth </li>
-                                        <ul class = "square">
-                                            <li> Responsible for writing and executing test plans, test cases and scripts to ensure quality coverage of all testing projects and provide operational support for the QA team.  </li>
-                                        </ul>
-                                </ul>
-							</article>
-
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contact Me</h2>
-								</header>
-                                <li> <a href = "https://www.linkedin.com/in/akiggins"  target="_blank"> Linkedin </a> </li>
-                                <li> <a href = "https://www.github.com/kiggins26"  target="_blank"> Github </a> </li>
-				<li> andrewkiggins2000@gmail.com </li>
-                            </article>
-
-					</div>
 				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
+					<footer id="footer">
+						<span class="copyright">&copy; Andrew Kiggins. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+					</footer>
 
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>
